@@ -36,7 +36,9 @@ and install the library.
     $ cd projects   { or wherever you put downloads }
     $ cd lcd101rpi_lib
     $ cd src
-    $ make && sudo make install
+    $ make clean
+    $ make 
+    $ **sudo make install
     
     
 ## Compiling
@@ -48,7 +50,8 @@ In the example folder, there is a sample program that you can compile and run li
 
     $ cd [project folder]
     $ cd example
-    $ make clean && make
+    $ make clean
+    $ make
     $ ./lcd1602 -a 0x23
     Raspberry Pi LCD test program
 
