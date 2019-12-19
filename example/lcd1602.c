@@ -19,24 +19,24 @@
  
  
 int lcdHandle;
-int lcdAddress = 0x23;
+int lcdAddress = 0x20;
  
 int usage(char **args) {
-  fprintf(stderr,"usage: %c [ -a hex_address ]\n", args[0]);
+  fprintf(stderr,"usage: %s [ -a hex_address ]\n", args[0]);
   return 0;
 }
 
 int commandLineOptions(int argc, char **args) {
-	int c, index;
+	int c;
 
 
 	while ((c = getopt(argc, args, "a:")) != -1)
 		switch (c) {
 		case 'a':
       if (strncmp(optarg,"0x",2)==0) {
-  			sscanf(optarg, "%x", &lcdAddress);
-      } else {
   			sscanf(&optarg[2], "%x", &lcdAddress);
+      } else {
+  			sscanf(optarg, "%x", &lcdAddress);
       }
 			break;
 		case '?':
@@ -92,4 +92,5 @@ int main (int argc, char **args)
  
  
  
+
 
