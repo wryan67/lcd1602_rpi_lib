@@ -1,0 +1,3 @@
+*/*.o
+*/libwiringPiLCD101rpi.so*
+example/lcd1602
