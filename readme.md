@@ -31,14 +31,14 @@ Use git to download the software from github.com:
 ## Install
 
 To compile this library, navigate into the src folder and use the make utility to compile 
-and install the library.
+and install the library.  Don't forget the **sudo** on the last make step.
 
     $ cd projects   { or wherever you put downloads }
     $ cd lcd101rpi_lib
     $ cd src
     $ make clean
     $ make 
-    $ **sudo** make install
+    $ sudo make install
     
     
 ## Compiling
