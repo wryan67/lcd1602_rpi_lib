@@ -7,17 +7,8 @@
                                                                                  *
   $ gcc lcd1602.c -lwiringPi -lwiringPiDev -lwiringPiLCD101rpi -o lcd1602        *
                                                                                  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <errno.h>
-#include <unistd.h>
-#include <ctype.h>
-#include <string.h>
- 
-#include <lcd101rpi.h>
- 
- 
+#include "lcd1602.h"
+
 int lcdHandle;
 int lcdAddress = 0x20;
  
@@ -90,7 +81,3 @@ int main (int argc, char **args)
   lcdPuts(lcdHandle, "line 2");
 }
  
- 
- 
-
-

@@ -18,7 +18,7 @@ $(EXECUTABLE): $(OBJECTS)
 	@$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 
 
-../obj/%.o: %.c
+../obj/%.o: %.h %.c
 	@echo compiling $(*D)/$(*F).c
 	@mkdir -p ../obj
 	@$(CC) $(CFLAGS) $(*D)/$(*F).c -o $@
