@@ -40,7 +40,7 @@ In the example folder, there is a sample program that you can compile and run li
 
     $ cd [project folder]
     $ cd example
-    $ gcc lcd1602.c -lwiringPi -lwiringPiLCD101rpi -o lcd1602
+    $ gcc lcd1602.c -lwiringPi -lwiringPiDev -lwiringPiLCD101rpi -o lcd1602 
     $ ./lcd1602 -a 0x23
     Raspberry Pi LCD test program
 
