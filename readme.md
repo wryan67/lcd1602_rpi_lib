@@ -38,7 +38,7 @@ and install the library.
     $ cd src
     $ make clean
     $ make 
-    $ **sudo make install
+    $ **sudo** make install
     
     
 ## Compiling
