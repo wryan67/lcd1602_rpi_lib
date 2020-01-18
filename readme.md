@@ -25,19 +25,16 @@ Use git to download the software from github.com:
 
     $ cd projects   { or wherever you put downloads }
     $ git clone https://github.com/wryan67/lcd101rpi_lib.git
-    $ cd lcd101rpi_lib
 
 
 ## Install
 
 To compile this library, navigate into the src folder and use the make utility to compile 
-and install the library.  Don't forget the **sudo** on the last make step.
+and install the library.  Don't forget the **sudo** on the last make step as the insall 
+process will copy the library to the system folders.
 
-    $ cd projects   { or wherever you put downloads }
     $ cd lcd101rpi_lib
     $ cd src
-    $ make clean
-    $ make 
     $ sudo make install
     
     
@@ -46,11 +43,11 @@ Complie your applications using these command line arguments: -lwiringPi -lwirin
 
 
 ## Examples
-In the example folder, there is a sample program that you can compile and run like this:
+In the example folder, there is a sample program that you can compile and run.  Use the "gpio i2cd" 
+command to determine what address your LCD16xx device is using.
 
     $ cd [project folder]
     $ cd example
-    $ make clean
     $ make
     $ ./lcd1602 -a 0x23
     Raspberry Pi LCD test program
