@@ -5,6 +5,11 @@
 #include <stdio.h>
 #include <lcd.h>
 
+
+#ifndef __NEOPIZEL_H__
+#define __NEOPIZEL_H__
+
+
 //PCF8574 Start I/O address
 // PCF8754 64+8
 #define AF_BASE 64
@@ -17,4 +22,17 @@
 #define AF_DB6 (AF_BASE + 6)
 #define AF_DB7 (AF_BASE + 7)
 
+#ifdef __cplusplus
+  extern "C"
+{
+#endif
+
 int lcdSetup(unsigned int i2cAddress);
+
+
+#ifdef __cplusplus
+}
+#endif
+#endif
+
+
