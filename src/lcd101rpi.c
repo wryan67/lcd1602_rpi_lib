@@ -29,3 +29,9 @@ int lcdSetup(unsigned int i2cAddress) {
 
 	return lcdHandle;
 }
+
+void lcdLED(int state) {
+  digitalWrite(AF_LED, state);    
+  delay(10);
+  digitalWrite(AF_LED, state);
+}

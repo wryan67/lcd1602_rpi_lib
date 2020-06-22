@@ -27,8 +27,8 @@
 {
 #endif
 
-int lcdSetup(unsigned int i2cAddress);
-
+int  lcdSetup(unsigned int i2cAddress);
+void lcdLED(int state);
 
 #ifdef __cplusplus
 }
