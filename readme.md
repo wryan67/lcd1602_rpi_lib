@@ -40,6 +40,7 @@ process will copy the library to the system folders.
     
 ## Compiling
 Complie your applications using these command line arguments:
+
     -lwiringPi -lwiringPiDev -lwiringPiLCD101rpi
 
 
