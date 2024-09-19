@@ -16,7 +16,7 @@ Then use the gpio command to make sure your i2c devices can be found.  .
 
 ## Prerequisites
 
-This Library is based on [WiringPi](http://wiringpi.com/), so, you'll need make sure you 
+This Library is based on [WiringPi](https://github.com/WiringPi), so, you'll need make sure you 
 have WiringPi installed before you can succesfully compile this library.  
 
 
